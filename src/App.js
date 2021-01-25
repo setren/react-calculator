@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "./App.css";
 
 class Tambah extends Component{
   state = {
@@ -22,20 +23,18 @@ class Tambah extends Component{
   render(){
     return(
       <div>
-        <div>{this.state.angka}</div>
-        <div>{this.state.hasil}</div>
-        <button onClick={this.tombol}>7</button>
-        <button onClick={this.tombol}>8</button>
-        <button onClick={this.tombol}>9</button><br></br>
-        <button onClick={this.tombol}>4</button>
-        <button onClick={this.tombol}>5</button>
-        <button onClick={this.tombol}>6</button><br></br>
-        <button onClick={this.tombol}>1</button>
-        <button onClick={this.tombol}>2</button>
-        <button onClick={this.tombol}>3</button><br></br>
-        <button onClick={this.tombol}>+</button>
-        <button onClick={this.tombol}>0</button>
-        <button onClick={this.tombolHasil}>=</button><br></br>
+        <button className="tombol" onClick={this.tombol}>7</button>
+        <button className="tombol" onClick={this.tombol}>8</button>
+        <button className="tombol" onClick={this.tombol}>9</button><br></br>
+        <button className="tombol" onClick={this.tombol}>4</button>
+        <button className="tombol" onClick={this.tombol}>5</button>
+        <button className="tombol" onClick={this.tombol}>6</button><br></br>
+        <button className="tombol" onClick={this.tombol}>1</button>
+        <button className="tombol" onClick={this.tombol}>2</button>
+        <button className="tombol" onClick={this.tombol}>3</button><br></br>
+        <button className="tombol" onClick={this.tombol}>+</button>
+        <button className="tombol" onClick={this.tombol}>0</button>
+        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
       </div>
     )
   }
@@ -63,20 +62,18 @@ class Kurang extends Component{
   render(){
     return(
       <div>
-        <div>{this.state.angka}</div>
-        <div>{this.state.hasil}</div>
-        <button onClick={this.tombol}>7</button>
-        <button onClick={this.tombol}>8</button>
-        <button onClick={this.tombol}>9</button><br></br>
-        <button onClick={this.tombol}>4</button>
-        <button onClick={this.tombol}>5</button>
-        <button onClick={this.tombol}>6</button><br></br>
-        <button onClick={this.tombol}>1</button>
-        <button onClick={this.tombol}>2</button>
-        <button onClick={this.tombol}>3</button><br></br>
-        <button onClick={this.tombol}>-</button>
-        <button onClick={this.tombol}>0</button>
-        <button onClick={this.tombolHasil}>=</button><br></br>
+        <button className="tombol" onClick={this.tombol}>7</button>
+        <button className="tombol" onClick={this.tombol}>8</button>
+        <button className="tombol" onClick={this.tombol}>9</button><br></br>
+        <button className="tombol" onClick={this.tombol}>4</button>
+        <button className="tombol" onClick={this.tombol}>5</button>
+        <button className="tombol" onClick={this.tombol}>6</button><br></br>
+        <button className="tombol" onClick={this.tombol}>1</button>
+        <button className="tombol" onClick={this.tombol}>2</button>
+        <button className="tombol" onClick={this.tombol}>3</button><br></br>
+        <button className="tombol" onClick={this.tombol}>-</button>
+        <button className="tombol" onClick={this.tombol}>0</button>
+        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
       </div>
     )
   }
@@ -104,20 +101,18 @@ class Kali extends Component{
   render(){
     return(
       <div>
-        <div>{this.state.angka}</div>
-        <div>{this.state.hasil}</div>
-        <button onClick={this.tombol}>7</button>
-        <button onClick={this.tombol}>8</button>
-        <button onClick={this.tombol}>9</button><br></br>
-        <button onClick={this.tombol}>4</button>
-        <button onClick={this.tombol}>5</button>
-        <button onClick={this.tombol}>6</button><br></br>
-        <button onClick={this.tombol}>1</button>
-        <button onClick={this.tombol}>2</button>
-        <button onClick={this.tombol}>3</button><br></br>
-        <button onClick={this.tombol}>*</button>
-        <button onClick={this.tombol}>0</button>
-        <button onClick={this.tombolHasil}>=</button><br></br>
+        <button className="tombol" onClick={this.tombol}>7</button>
+        <button className="tombol" onClick={this.tombol}>8</button>
+        <button className="tombol" onClick={this.tombol}>9</button><br></br>
+        <button className="tombol" onClick={this.tombol}>4</button>
+        <button className="tombol" onClick={this.tombol}>5</button>
+        <button className="tombol" onClick={this.tombol}>6</button><br></br>
+        <button className="tombol" onClick={this.tombol}>1</button>
+        <button className="tombol" onClick={this.tombol}>2</button>
+        <button className="tombol" onClick={this.tombol}>3</button><br></br>
+        <button className="tombol" onClick={this.tombol}>*</button>
+        <button className="tombol" onClick={this.tombol}>0</button>
+        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
       </div>
     )
   }
@@ -145,20 +140,18 @@ class Bagi extends Component{
   render(){
     return(
       <div>
-        <div>{this.state.angka}</div>
-        <div>{this.state.hasil}</div>
-        <button onClick={this.tombol}>7</button>
-        <button onClick={this.tombol}>8</button>
-        <button onClick={this.tombol}>9</button><br></br>
-        <button onClick={this.tombol}>4</button>
-        <button onClick={this.tombol}>5</button>
-        <button onClick={this.tombol}>6</button><br></br>
-        <button onClick={this.tombol}>1</button>
-        <button onClick={this.tombol}>2</button>
-        <button onClick={this.tombol}>3</button><br></br>
-        <button onClick={this.tombol}>/</button>
-        <button onClick={this.tombol}>0</button>
-        <button onClick={this.tombolHasil}>=</button><br></br>
+        <button className="tombol" onClick={this.tombol}>7</button>
+        <button className="tombol" onClick={this.tombol}>8</button>
+        <button className="tombol" onClick={this.tombol}>9</button><br></br>
+        <button className="tombol" onClick={this.tombol}>4</button>
+        <button className="tombol" onClick={this.tombol}>5</button>
+        <button className="tombol" onClick={this.tombol}>6</button><br></br>
+        <button className="tombol" onClick={this.tombol}>1</button>
+        <button className="tombol" onClick={this.tombol}>2</button>
+        <button className="tombol" onClick={this.tombol}>3</button><br></br>
+        <button className="tombol" onClick={this.tombol}>/</button>
+        <button className="tombol" onClick={this.tombol}>0</button>
+        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
       </div>
     )
   }
@@ -183,18 +176,18 @@ function D(){
 class App extends Component{
 
 state={
-    array: [null , <A/>, <B/>, <C/>, <D/>]  ,
+    array: [null , <A/>, <B/>, <C/>, <D/>],
     count: 0
   }
 
 tombol = (e) => {
-  if(e.target.innerHTML === 'Tambah'){
+  if(e.target.innerHTML === 'Plus'){
     this.setState({count: 1})
-  }else if (e.target.innerHTML === 'Kurang'){
+  }else if (e.target.innerHTML === 'Mins'){
     this.setState({count: 2})
-  }else if (e.target.innerHTML === 'Kali'){
+  }else if (e.target.innerHTML === 'Mult'){
     this.setState({count: 3})
-  }else if (e.target.innerHTML === 'Bagi'){
+  }else if (e.target.innerHTML === 'Divs'){
     this.setState({count: 4})
   }else{
     this.setState({count: 0})
@@ -204,11 +197,13 @@ tombol = (e) => {
 render(){
   return(
     <div>
-      <button onClick={this.tombol}>Tambah</button>
-      <button onClick={this.tombol}>Kurang</button>
-      <button onClick={this.tombol}>Kali</button>
-      <button onClick={this.tombol}>Bagi</button>
-      <h1>{this.state.array[ this.state.count]}</h1>
+      <button className="tombolPanel" onClick={this.tombol}>Plus</button>
+      <button className="tombolPanel" onClick={this.tombol}>Mins</button><br></br>
+      <button className="tombolPanel" onClick={this.tombol}>Mult</button>
+      <button className="tombolPanel" onClick={this.tombol}>Divs</button>
+      <div className="panel">{this.state.angka}</div>
+      <div className="panel">{this.state.hasil}</div>
+      <div>{this.state.array[this.state.count]}</div>
     </div>)
 }
 }

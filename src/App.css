@@ -1,38 +1,67 @@
-.App {
+.tombol{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
   text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px #999;
+  width: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tombol:hover {background-color: #3e8e41}
+
+.tombol:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tombolPanel{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px #999;
+  width: 123px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tombolPanel:hover {background-color: rgb(39, 39, 39)}
+
+.tombolPanel:active {
+  background-color: rgb(39, 39, 39);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.panel{
+  width: 260px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #3e8e41;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
 }
