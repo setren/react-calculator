@@ -5,8 +5,7 @@ import Tambah from './Komponen/Tambah';
 function App() {
   return (
     <div>
-      <Hasil/>
-      <Tambah/>
+      <Hasil />
     </div>
   );
 }

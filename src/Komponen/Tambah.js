@@ -7,8 +7,10 @@ class Tambah extends Component{
     hasil : ''
   }
 
-  
-  
+  papanTambah = (e) => {
+    console.log(this.props)    
+  }
+
   tombol = (e) => {
     this.setState({
       angka: this.state.angka + e.target.innerHTML
@@ -23,15 +25,15 @@ class Tambah extends Component{
     this.setState({
       hasil: hasil
     })
-    console.log(hasil)
   }
+
 
   render(){
     return(
       <div>
         <hr></hr>
-        <div>{this.state.angka}</div>
-        <div>{this.state.hasil}</div>
+        {/* <div>{this.state.angka}</div>
+        <div>{this.state.hasil}</div> */}
         <button onClick={this.tombol}>7</button>
         <button onClick={this.tombol}>8</button>
         <button onClick={this.tombol}>9</button><br></br>
@@ -43,7 +45,7 @@ class Tambah extends Component{
         <button onClick={this.tombol}>3</button><br></br>
         <button onClick={this.tombol}>+</button>
         <button onClick={this.tombol}>0</button>
-        <button onClick={this.tombolHasil}>=</button>
+        <button onClick={this.tombolHasil}>=</button><br></br>
       </div>
     )
   }
