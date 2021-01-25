@@ -1,9 +1,13 @@
 import './App.css';
+import Hasil from './Komponen/Hasil';
 import Tambah from './Komponen/Tambah';
 
 function App() {
   return (
-    <Tambah/>
+    <div>
+      <Hasil/>
+      <Tambah/>
+    </div>
   );
 }
 
