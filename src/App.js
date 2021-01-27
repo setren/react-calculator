@@ -1,211 +1,262 @@
-import { Component } from "react";
-import "./App.css";
+import { Component } from 'react'
+import './App.css';
 
-class Tambah extends Component{
-  state = {
-    angka : '',
-    hasil : ''
-  }
-  tombol = (e) => {
-    this.setState({
-      angka: this.state.angka + e.target.innerHTML
-    })
-  }
-  tombolHasil = (e) => {
-    const index = this.state.angka.indexOf('+')
-    const angka1 = this.state.angka.slice(0, index)
-    const angka2 = this.state.angka.slice(index + 1)
-    const hasil = parseInt(angka1) + parseInt(angka2)
-    this.setState({
-      hasil: hasil
-    })
-  }
-  render(){
-    return(
+class Hasil extends Component {
+  render() {
+    return (
       <div>
-        <button className="tombol" onClick={this.tombol}>7</button>
-        <button className="tombol" onClick={this.tombol}>8</button>
-        <button className="tombol" onClick={this.tombol}>9</button><br></br>
-        <button className="tombol" onClick={this.tombol}>4</button>
-        <button className="tombol" onClick={this.tombol}>5</button>
-        <button className="tombol" onClick={this.tombol}>6</button><br></br>
-        <button className="tombol" onClick={this.tombol}>1</button>
-        <button className="tombol" onClick={this.tombol}>2</button>
-        <button className="tombol" onClick={this.tombol}>3</button><br></br>
-        <button className="tombol" onClick={this.tombol}>+</button>
-        <button className="tombol" onClick={this.tombol}>0</button>
-        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
+        <div class="panel" >
+          {this.props.hasil}
+        </div>
       </div>
     )
   }
 }
 
-class Kurang extends Component{
-  state = {
-    angka : '',
-    hasil : ''
-  }
-  tombol = (e) => {
-    this.setState({
-      angka: this.state.angka + e.target.innerHTML
-    })
-  }
-  tombolHasil = (e) => {
-    const index = this.state.angka.indexOf('-')
-    const angka1 = this.state.angka.slice(0, index)
-    const angka2 = this.state.angka.slice(index + 1)
-    const hasil = parseInt(angka1) - parseInt(angka2)
-    this.setState({
-      hasil: hasil
-    })
-  }
-  render(){
-    return(
+class NumberTambah extends Component {
+  render() {
+    return (
       <div>
-        <button className="tombol" onClick={this.tombol}>7</button>
-        <button className="tombol" onClick={this.tombol}>8</button>
-        <button className="tombol" onClick={this.tombol}>9</button><br></br>
-        <button className="tombol" onClick={this.tombol}>4</button>
-        <button className="tombol" onClick={this.tombol}>5</button>
-        <button className="tombol" onClick={this.tombol}>6</button><br></br>
-        <button className="tombol" onClick={this.tombol}>1</button>
-        <button className="tombol" onClick={this.tombol}>2</button>
-        <button className="tombol" onClick={this.tombol}>3</button><br></br>
-        <button className="tombol" onClick={this.tombol}>-</button>
-        <button className="tombol" onClick={this.tombol}>0</button>
-        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
+        <button class="tombol" onClick={() => this.props.click(1)}>1</button>
+        <button class="tombol" onClick={() => this.props.click(2)}>2</button>
+        <button class="tombol" onClick={() => this.props.click(3)}>3</button><br />
+        <button class="tombol" onClick={() => this.props.click(4)}>4</button>
+        <button class="tombol" onClick={() => this.props.click(5)}>5</button>
+        <button class="tombol" onClick={() => this.props.click(6)}>6</button><br />
+        <button class="tombol" onClick={() => this.props.click(7)}>7</button>
+        <button class="tombol" onClick={() => this.props.click(8)}>8</button>
+        <button class="tombol" onClick={() => this.props.click(9)}>9</button><br />
+        <button class="tombol" onClick={() => this.props.click('+')}>+</button>
+        <button class="tombol" onClick={() => this.props.click(0)}>0</button>
+        <button class="tombol" onClick={() => this.props.click('=')}>=</button>
+      </div>)
+  }
+}
+class NumberKurang extends Component {
+  render() {
+    return (
+      <div>
+        <button class="tombol" onClick={() => this.props.click(1)}>1</button>
+        <button class="tombol" onClick={() => this.props.click(2)}>2</button>
+        <button class="tombol" onClick={() => this.props.click(3)}>3</button><br />
+        <button class="tombol" onClick={() => this.props.click(4)}>4</button>
+        <button class="tombol" onClick={() => this.props.click(5)}>5</button>
+        <button class="tombol" onClick={() => this.props.click(6)}>6</button><br />
+        <button class="tombol" onClick={() => this.props.click(7)}>7</button>
+        <button class="tombol" onClick={() => this.props.click(8)}>8</button>
+        <button class="tombol" onClick={() => this.props.click(9)}>9</button><br />
+        <button class="tombol" onClick={() => this.props.click('-')}>-</button>
+        <button class="tombol" onClick={() => this.props.click(0)}>0</button>
+        <button class="tombol" onClick={() => this.props.click('=')}>=</button>
+      </div>)
+  }
+}
+class NumberKali extends Component {
+  render() {
+    return (
+      <div>
+        <button class="tombol" onClick={() => this.props.click(1)}>1</button>
+        <button class="tombol" onClick={() => this.props.click(2)}>2</button>
+        <button class="tombol" onClick={() => this.props.click(3)}>3</button><br />
+        <button class="tombol" onClick={() => this.props.click(4)}>4</button>
+        <button class="tombol" onClick={() => this.props.click(5)}>5</button>
+        <button class="tombol" onClick={() => this.props.click(6)}>6</button><br />
+        <button class="tombol" onClick={() => this.props.click(7)}>7</button>
+        <button class="tombol" onClick={() => this.props.click(8)}>8</button>
+        <button class="tombol" onClick={() => this.props.click(9)}>9</button><br />
+        <button class="tombol" onClick={() => this.props.click('*')}>*</button>
+        <button class="tombol" onClick={() => this.props.click(0)}>0</button>
+        <button class="tombol" onClick={() => this.props.click('=')}>=</button>
+      </div>)
+  }
+}
+class NumberBagi extends Component {
+  render() {
+    return (
+      <div>
+        <button class="tombol" onClick={() => this.props.click(1)}>1</button>
+        <button class="tombol" onClick={() => this.props.click(2)}>2</button>
+        <button class="tombol" onClick={() => this.props.click(3)}>3</button><br />
+        <button class="tombol" onClick={() => this.props.click(4)}>4</button>
+        <button class="tombol" onClick={() => this.props.click(5)}>5</button>
+        <button class="tombol" onClick={() => this.props.click(6)}>6</button><br />
+        <button class="tombol" onClick={() => this.props.click(7)}>7</button>
+        <button class="tombol" onClick={() => this.props.click(8)}>8</button>
+        <button class="tombol" onClick={() => this.props.click(9)}>9</button><br />
+        <button class="tombol" onClick={() => this.props.click('/')}>/</button>
+        <button class="tombol" onClick={() => this.props.click(0)}>0</button>
+        <button class="tombol" onClick={() => this.props.click('=')}>=</button>
+      </div>)
+  }
+}
+class Tambah extends Component {
+  state = {
+    angka: ''
+  }
+  click = (v) => {
+    const { angka } = this.state
+    if (v === '=') {
+      const hasil = angka
+      this.props.calculate(hasil)
+      console.log(hasil)
+    } else {
+      this.setState({
+        angka: angka + v
+      })
+    }
+  }
+  render() {
+    return (
+      <div>
+        <div class="panel">
+          #{this.state.angka}
+        </div>
+        <NumberTambah click={this.click} />
+      </div>
+    )
+  }
+}
+class Kurang extends Component {
+  state = {
+    angka: ''
+  }
+  click = (v) => {
+    const { angka } = this.state
+    if (v === '=') {
+      const hasil = angka
+      this.props.calculate(hasil)
+      console.log(hasil)
+    } else {
+      this.setState({
+        angka: angka + v
+      })
+    }
+  }
+  render() {
+    return (
+      <div>
+        <div class="panel">
+          #{this.state.angka}
+        </div>
+        <NumberKurang click={this.click} />
+      </div>
+    )
+  }
+}
+class Kali extends Component {
+  state = {
+    angka: ''
+  }
+  click = (v) => {
+    const { angka } = this.state
+    if (v === '=') {
+      const hasil = angka
+      this.props.calculate(hasil)
+      console.log(hasil)
+    } else {
+      this.setState({
+        angka: angka + v
+      })
+    }
+  }
+  render() {
+    return (
+      <div>
+        <div class="panel">
+          #{this.state.angka}
+        </div>
+        <NumberKali click={this.click} />
+      </div>
+    )
+  }
+}
+class Bagi extends Component {
+  state = {
+    angka: ''
+  }
+  click = (v) => {
+    const { angka } = this.state
+    if (v === '=') {
+      const hasil = angka
+      this.props.calculate(hasil)
+      console.log(hasil)
+    } else {
+      this.setState({
+        angka: angka + v
+      })
+    }
+  }
+  render() {
+    return (
+      <div>
+        <div class="panel">
+          #{this.state.angka}
+        </div>
+        <NumberBagi click={this.click} />
       </div>
     )
   }
 }
 
-class Kali extends Component{
+class App extends Component {
   state = {
-    angka : '',
-    hasil : ''
+    operator: null,
+    hasil: 0
   }
-  tombol = (e) => {
-    this.setState({
-      angka: this.state.angka + e.target.innerHTML
-    })
+  select = (s) => {
+    this.setState({ operator: s })
   }
-  tombolHasil = (e) => {
-    const index = this.state.angka.indexOf('*')
-    const angka1 = this.state.angka.slice(0, index)
-    const angka2 = this.state.angka.slice(index + 1)
-    const hasil = parseInt(angka1) * parseInt(angka2)
-    this.setState({
-      hasil: hasil
-    })
+  calculate = (hasil) => {
+    if (hasil.includes('+')) {
+      const index = hasil.indexOf('+')
+      const angka1 = hasil.slice(0, index)
+      const angka2 = hasil.slice(index + 1)
+      const hasilakhir = parseInt(angka1) + parseInt(angka2)
+      this.setState({
+        hasil: hasilakhir
+      })
+    } else if (hasil.includes('-')) {
+      const index = hasil.indexOf('-')
+      const angka1 = hasil.slice(0, index)
+      const angka2 = hasil.slice(index + 1)
+      const hasilakhir = parseInt(angka1) - parseInt(angka2)
+      this.setState({
+        hasil: hasilakhir
+      })
+    } else if (hasil.includes('*')) {
+      const index = hasil.indexOf('*')
+      const angka1 = hasil.slice(0, index)
+      const angka2 = hasil.slice(index + 1)
+      const hasilakhir = parseInt(angka1) * parseInt(angka2)
+      this.setState({
+        hasil: hasilakhir
+      })
+    } else if (hasil.includes('/')) {
+      const index = hasil.indexOf('/')
+      const angka1 = hasil.slice(0, index)
+      const angka2 = hasil.slice(index + 1)
+      const hasilakhir = parseInt(angka1) / parseInt(angka2)
+      this.setState({
+        hasil: hasilakhir
+      })
+    }
   }
-  render(){
-    return(
+
+  render() {
+    return (
       <div>
-        <button className="tombol" onClick={this.tombol}>7</button>
-        <button className="tombol" onClick={this.tombol}>8</button>
-        <button className="tombol" onClick={this.tombol}>9</button><br></br>
-        <button className="tombol" onClick={this.tombol}>4</button>
-        <button className="tombol" onClick={this.tombol}>5</button>
-        <button className="tombol" onClick={this.tombol}>6</button><br></br>
-        <button className="tombol" onClick={this.tombol}>1</button>
-        <button className="tombol" onClick={this.tombol}>2</button>
-        <button className="tombol" onClick={this.tombol}>3</button><br></br>
-        <button className="tombol" onClick={this.tombol}>*</button>
-        <button className="tombol" onClick={this.tombol}>0</button>
-        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
+        <button class="tombol-panel" onClick={() => this.select('+')}>+</button>
+        <button class="tombol-panel" onClick={() => this.select('-')}>-</button><br />
+        <button class="tombol-panel" onClick={() => this.select(':')}>:</button>
+        <button class="tombol-panel" onClick={() => this.select('x')}>x</button>
+        <Hasil hasil={this.state.hasil} />
+        { this.state.operator === ":" && <Bagi calculate={this.calculate} />}
+        { this.state.operator === "x" && <Kali calculate={this.calculate} />}
+        { this.state.operator === "+" && <Tambah calculate={this.calculate} />}
+        { this.state.operator === "-" && <Kurang calculate={this.calculate} />}
       </div>
     )
   }
 }
 
-class Bagi extends Component{
-  state = {
-    angka : '',
-    hasil : ''
-  }
-  tombol = (e) => {
-    this.setState({
-      angka: this.state.angka + e.target.innerHTML
-    })
-  }
-  tombolHasil = (e) => {
-    const index = this.state.angka.indexOf('/')
-    const angka1 = this.state.angka.slice(0, index)
-    const angka2 = this.state.angka.slice(index + 1)
-    const hasil = parseInt(angka1) / parseInt(angka2)
-    this.setState({
-      hasil: hasil
-    })
-  }
-  render(){
-    return(
-      <div>
-        <button className="tombol" onClick={this.tombol}>7</button>
-        <button className="tombol" onClick={this.tombol}>8</button>
-        <button className="tombol" onClick={this.tombol}>9</button><br></br>
-        <button className="tombol" onClick={this.tombol}>4</button>
-        <button className="tombol" onClick={this.tombol}>5</button>
-        <button className="tombol" onClick={this.tombol}>6</button><br></br>
-        <button className="tombol" onClick={this.tombol}>1</button>
-        <button className="tombol" onClick={this.tombol}>2</button>
-        <button className="tombol" onClick={this.tombol}>3</button><br></br>
-        <button className="tombol" onClick={this.tombol}>/</button>
-        <button className="tombol" onClick={this.tombol}>0</button>
-        <button className="tombol" onClick={this.tombolHasil}>=</button><br></br>
-      </div>
-    )
-  }
-}
-
-function A(){
-  return (<Tambah/>)  
-}
-
-function B(){
-  return (<Kurang/>)  
-}
-
-function C(){
-  return (<Kali/>)  
-}
-
-function D(){
-  return (<Bagi/>)  
-}
-
-class App extends Component{
-
-state={
-    array: [null , <A/>, <B/>, <C/>, <D/>],
-    count: 0
-  }
-
-tombol = (e) => {
-  if(e.target.innerHTML === 'Plus'){
-    this.setState({count: 1})
-  }else if (e.target.innerHTML === 'Mins'){
-    this.setState({count: 2})
-  }else if (e.target.innerHTML === 'Mult'){
-    this.setState({count: 3})
-  }else if (e.target.innerHTML === 'Divs'){
-    this.setState({count: 4})
-  }else{
-    this.setState({count: 0})
-  }
-}
-
-render(){
-  return(
-    <div>
-      <button className="tombolPanel" onClick={this.tombol}>Plus</button>
-      <button className="tombolPanel" onClick={this.tombol}>Mins</button><br></br>
-      <button className="tombolPanel" onClick={this.tombol}>Mult</button>
-      <button className="tombolPanel" onClick={this.tombol}>Divs</button>
-      <div className="panel">{this.state.angka}</div>
-      <div className="panel">{this.state.hasil}</div>
-      <div>{this.state.array[this.state.count]}</div>
-    </div>)
-}
-}
-
-export default App
+export default App;
