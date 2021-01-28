@@ -1,4 +1,4 @@
-.tombol{
+.tombol {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -7,7 +7,7 @@
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border: none;
   border-radius: 50px;
   box-shadow: 0 9px #999;
@@ -18,7 +18,9 @@
   margin-left: 10px;
 }
 
-.tombol:hover {background-color: #3e8e41}
+.tombol:hover {
+  background-color: #3e8e41;
+}
 
 .tombol:active {
   background-color: #3e8e41;
@@ -26,7 +28,7 @@
   transform: translateY(4px);
 }
 
-.tombol-panel{
+.tombol-panel {
   width: 130px;
   display: inline-block;
   padding: 15px 25px;
@@ -36,7 +38,7 @@
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: black;
   border: none;
   border-radius: 50px;
   box-shadow: 0 9px #999;
@@ -46,15 +48,17 @@
   margin-left: 10px;
 }
 
-.tombol-panel:hover {background-color: #3e8e41}
+.tombol-panel:hover {
+  background-color: pink;
+}
 
 .tombol-panel:active {
-  background-color: #3e8e41;
+  background-color: hotpink;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.panel{
+.panel {
   width: 250px;
   margin-top: 10px;
   margin-left: 10px;

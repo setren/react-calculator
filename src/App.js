@@ -109,7 +109,7 @@ class Tambah extends Component {
     return (
       <div>
         <div class="panel">
-          #{this.state.angka}
+          |{this.state.angka}|
         </div>
         <NumberTambah click={this.click} />
       </div>
@@ -136,7 +136,7 @@ class Kurang extends Component {
     return (
       <div>
         <div class="panel">
-          #{this.state.angka}
+          |{this.state.angka}|
         </div>
         <NumberKurang click={this.click} />
       </div>
@@ -163,7 +163,7 @@ class Kali extends Component {
     return (
       <div>
         <div class="panel">
-          #{this.state.angka}
+          |{this.state.angka}|
         </div>
         <NumberKali click={this.click} />
       </div>
@@ -190,7 +190,7 @@ class Bagi extends Component {
     return (
       <div>
         <div class="panel">
-          #{this.state.angka}
+          |{this.state.angka}|
         </div>
         <NumberBagi click={this.click} />
       </div>
